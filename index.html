@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="The resume of Sonu Sai P K.  20 year old btech student" />
+    <meta name="keywords" content="resume,sonu,web,designer,developer,btech" />
+    <meta name="author" content="Sonu Sai P K" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonu Sai's Resume</title>
+  </head>
+
+
+  <body >
+    <div class="withBorder">      
+      <button class="switchMode" id="darkMode" >Dark Mode</button>
+      <button class="switchMode" id="lightMode">Light Mode</button>
+      <h1 style="text-align: center;">Sonu Sai P K</h1>
+      <img id="dp" src="images/dp.jpg" alt="Sonu Sai's Picture" height="250" />      
+      <h2>Communication Address</h2>
+    <div>
+    <p>Parakkuth house koottilangadi [PO] </br> Malappuram dist, Kerala </br>Pin: 676506 <br>
+      <b>Phone </b>: 9745730040 </br>
+      <b>Email </b>: sonusaist@gmail.com
+    </p>
+    <a href="https://github.com/sonu-sai" target="_blank">
+            <img class="icons" src="images/github.png" alt="github icon"/></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sonu-sai-888b3596/" target="_blank">
+      <img class="icons" src="images/linkedin.png" alt="linkedin icon"/>
+    </a>
+    </div>
+      <h2 >Educational Qualifications</h2>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="expandEducational">
+        <span class="material-icons">
+          expand_more
+        </span>
+      </button>
+      <div class="content" id="educationalContent">
+        <h3 class="subtitle">NSS College Of Engineering, Palakkad</h3>
+        <p><b>B.tech</b> in Computer Science</p>
+        <h3 class="subtitle">Higher Secondary</h3>
+        <p class="withsubtitle">
+          MSP HSS, Malappuram <br />
+          <b>PLUS TWO</b> 91% Mark
+        </p>
+        <h3 class="subtitle">High School</h3>
+        <p>
+          MSP HSS, Malappuram <br />
+          <b>SSLC</b> 95% Mark
+        </p>
+      </div>
+      <h2 class="subtitle">Memberships in </h2>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="expandMembership">
+        <span class="material-icons">
+          expand_more
+        </span>
+      </button>
+      <div class="content" id="membershipContent">
+      <ul class="withsubtitle">
+        <li>National Service Scheme</li>
+        <li>FOSS Club</li>
+        <li>Space Club</li>
+        <li>STACS</li>
+      </ul>
+    </div>
+      <h2 class="subtitle">Programming Languages</h2>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="expandProgramming">
+        <span class="material-icons">
+          expand_more
+        </span>
+      </button>
+      <div class="content" id="programmingContent">
+        <ol class="withsubtitle" >
+          <li>Python</li>
+          <li>C</li>
+          <li>SQL</li>
+          <li>Java</li>
+          <li>JavaSript</li>
+        </ol>
+      </div>
+      <h2 class="subtitle">Hobbies</h2>
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" id="expandHobbies">
+        <span class="material-icons">
+          expand_more
+        </span>
+      </button>
+      <div class="content" id="hobbiesContent">
+        <ul class="withsubtitle">
+          <li>Listening songs</li>
+          <li>Watching Movies</li>
+          <li>Playing Video Games</li>
+          <li>Swimming</li>
+        </ul>
+      </div>
+      
+    </div>
+    <script src="script.js" ></script>
+      <script>
+      document
+        .querySelector("#expandEducational")
+        .addEventListener("click", function() {
+          expand("educationalContent");
+        });
+      
+      document
+        .querySelector("#expandMembership")
+        .addEventListener("click", function() {
+          expand("membershipContent");
+        });
+      
+      document
+        .querySelector("#expandProgramming")
+        .addEventListener("click", function() {
+          expand("programmingContent");
+        });
+      
+      document.querySelector("#expandHobbies").addEventListener("click", function() {
+        expand("hobbiesContent");
+      });
+      document.querySelector('#darkMode').addEventListener('click' , function () {
+        dark('dark');
+      });
+      document.querySelector('#lightMode').addEventListener('click' , function () {
+        light('dark');
+      });
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+a {
+  margin: 0px 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: darkgray;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+div {
+  text-align: left;
+  margin-left: 50px;
+}
+
+h2 {
+  font-family: "Arvo", serif;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.content {
+  display: none;
+}
+
+.content.reveal {
+  display: block;
+}
+
+.icons {
+  height: 40px;
+  background-color: darkgray;
+  border-radius: 10%;
+}
+
+.pageLink {
+  display: block;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.switchMode {
+  float: right;
+  margin-right: 5px;
+}
+
+/* .subtitle {
+  margin-bottom: -5px;
+}
+
+.withSubtitle {
+  margin-top: -5px;
+} */
+
+#dp {
+  margin-right: 150px;
+  border-radius: 10%;
+  float: right;
+}
+
+.withBorder {
+  border: 3px solid #777777;
+  padding: 25px;
+  margin: 25px;
+  box-sizing: border-box;
+}
